@@ -11,6 +11,8 @@ export default function SearchIconSet({ icon, query, setResults }) {
   return (
     <IconSet fallback={<SearchPageIconLoading />}>
       {({ default: icons }) => {
+        console.log(icons);
+
         const found = Object.keys(icons)
           .filter(name => name.toLowerCase().includes(query))
         return (
