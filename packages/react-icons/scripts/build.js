@@ -73,26 +73,22 @@ async function convertIconData(svg, multiColor) {
   const tree = elementToTree($svg);
   return tree[0]; // like: [ { tag: 'path', attr: { d: 'M436 160c6.6 ...', ... }, child: { ... } } ]
 }
+
 function generateIconRow(icon, formattedName, iconData, type = "module") {
   switch (type) {
     case "module":
       return (
-        `export var ${formattedName} = function (props) {\n` +
-        `  return GenIcon(${JSON.stringify(iconData)})(props);\n` +
-        `};\n` +
-        `${formattedName}.displayName = "${formattedName}";\n` +
-            `${formattedName}.iconSet = "${icon.id}";\n`
-
-
+        `import ${formattedName} from './${formattedName}';\n`+
+        `${formattedName}.displayName = "${formattedName}";\n`+
+          `${formattedName}.iconSet = "${icon.id}";\n` +
+        `export { ${formattedName} };\n\n`
       );
     case "common":
       return (
-        `module.exports.${formattedName} = function (props) {\n` +
-        `  return GenIcon(${JSON.stringify(iconData)})(props);\n` +
-        `};\n` +
+        `var ${formattedName} = require('./${formattedName}');\n`+
         `module.exports.${formattedName}.displayName = "${formattedName}";\n` +
-        `module.exports.${formattedName}.iconSet = "${icon.id}";\n`
-
+        `module.exports.${formattedName}.iconSet = "${icon.id}";\n` +
+        `module.exports.${formattedName} = ${formattedName};\n\n`
       );
     case "dts":
       return `export declare const ${formattedName}: IconType;\n`;
@@ -145,11 +141,11 @@ async function dirInit() {
 
     await write(
       [icon.id, "index.js"],
-      "// THIS FILE IS AUTO GENERATED\nvar GenIcon = require('../lib').GenIcon\n"
+      "// THIS FILE IS AUTO GENERATED\n"
     );
     await write(
       [icon.id, "index.esm.js"],
-      "// THIS FILE IS AUTO GENERATED\nimport { GenIcon } from '../lib';\n"
+      "// THIS FILE IS AUTO GENERATED\n"
     );
     await write(
       [icon.id, "index.d.ts"],
@@ -185,12 +181,11 @@ async function generateIconFile(icon, name, iconData) {
 
   const getFileContent = ()=> {
       return (
-          `import { GenIcon } from '../lib';\n\nexport default function (props) {\n` +
+          `var GenIcon = require('../lib').GenIcon\n\nmodule.exports = function (props) {\n` +
           `   return GenIcon(${JSON.stringify(iconData)})(props);\n` +
           `};\n`
       );
   }
-
   await write([icon.id, `${name}.js`], getFileContent());
 }
 async function writeIconModule(icon) {
