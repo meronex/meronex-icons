@@ -1,11 +1,11 @@
 import codegen from "babel-plugin-codegen/macro";
 
 const fn = codegen`
-const { IconsManifest } = require("@meronex/icons//lib/cjs");
+const { IconsManifest } = require("@meronex/icons/lib/cjs");
 
 let codes = "(function (id) { switch (id) {";
 IconsManifest.forEach(icon => {
-  codes += 'case "' + icon.id + '":\\nreturn import("react-icons/' + icon.id +'/index");\\n'
+  codes += 'case "' + icon.id + '":\\nreturn import("@meronex/icons/' + icon.id +'/index");\\n'
 })
 codes += '}})';
 
