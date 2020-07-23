@@ -14,7 +14,7 @@
   "private": true,
   "dependencies": {
     "@loadable/component": "^5.10.3",
-    "@meronex/icons": "^1.0.11",
+    "@meronex/icons": "^1.0.12",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "babel-plugin-codegen": "^3.1.0",

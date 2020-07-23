@@ -12,7 +12,6 @@ export default function CodeBlock({ code }) {
       position: "bottom-center"
     });
   };
-
   return (
     <Highlight
       {...defaultProps}

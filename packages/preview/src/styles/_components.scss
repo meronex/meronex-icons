@@ -52,7 +52,7 @@ a {
 .sidebar {
   max-width: var(--sidebar-width);
   position: fixed;
-  background: var(--color-gray-1);
+  background:#444444;
 }
 
 .search {
@@ -94,7 +94,7 @@ a {
 
   a {
     line-height: 1.7rem;
-    color: var(--color-black);
+    color: white;
     border: 2px solid transparent;
     outline: none;
     transition: all 0.1s ease;
@@ -106,7 +106,6 @@ a {
 
     &.active {
       border-color: transparent;
-      background: var(--color-gray-2);
       font-weight: 600;
     }
   }
