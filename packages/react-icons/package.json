@@ -1,6 +1,6 @@
 {
   "name": "@meronex/icons",
-  "version": "1.0.7",
+  "version": "1.0.11",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "author": "Goran Gajic",
   "contributors": [
@@ -51,12 +51,15 @@
     "typescript": "^3.4.5"
   },
   "scripts": {
-    "build": "node scripts/build.js && yarn build-mjs && yarn build-cjs",
+    "build": "node scripts/build.js  && yarn build-mjs && yarn build-cjs",
     "prebuild": "node ../../node_modules/copy/bin/cli.js ../../README.md ./packages/react-icons && rimraf ./lib",
     "build-mjs": "tsc && babel ./lib/esm -d ./lib/esm",
-    "build-cjs": "tsc -p ./tsconfig.commonjs.json"
+    "build-cjs": "tsc -p ./tsconfig.commonjs.json",
+    "check-env": "node -e 'console.log(process.env)' | grep npm"
+
   },
   "dependencies": {
-    "camelcase": "^5.0.0"
+    "camelcase": "^5.0.0",
+    "ncp": "^2.0.0"
   }
 }
