@@ -307,6 +307,19 @@ module.exports = {
       projectUrl: "https://github.com/astrit/css.gg",
       license: "MIT",
       licenseUrl: "https://opensource.org/licenses/MIT"
+    },
+    {
+      id: "mdc",
+      name: "Material Design Commumity Icons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "MaterialDesign/svg/*.svg"),
+          formatter: name => `Mdc${name}`
+        }
+      ],
+      projectUrl: "https://github.com/templarian/MaterialDesign",
+      license: "SIL",
+      licenseUrl: "https://github.com/Templarian/MaterialDesign/blob/master/LICENSE"
     }
   ]
 };
