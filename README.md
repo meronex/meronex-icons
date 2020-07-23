@@ -188,6 +188,62 @@ cd ../demo
 yarn start
 ```
 
+### How to add an icon set
+
+#### 1. Add new git submodule
+
+From the main directory (where this file is located) run the following command:
+
+```bash	```bash
+cd packages/react-icons	git submodule add --name <name> <git-repo-url-for-the-new-icon-set> packages/react-icons/src/icons/<name>
+yarn build	```
+
+
+cd ../demo	#### 2. Modify **README.md** (this document)
+yarn start	
+Add the name, URL, and the license link to the table in the `##Icons` section of this file.
+Keep the list in alphabetical order.
+
+#### 3. Modify **packages/react-icons/.gitignore**
+
+Add the two-letter folder name for the new icon set, e.g.:
+
+```text
+...
+/xy/
+...
+```
+
+
+#### 4. Modify **packages/react-icons/LICENSE**
+
+Add license details about the new icon set.
+
+#### 5. Modify **packages/react-icons/src/icons/index.js**
+
+Add the object with the following structure:
+
+```JavaScript
+{
+      id: "xy",                                    // Two-letter id
+      name: "e.g. Xenon Yellow Icons",             // The full icon set name
+      contents: [
+        {
+          files: path.resolve(__dirname, "<relative-path-to-git-submodule>/<path-to-svg-icons>/<filter>"),
+          formatter: name => `Xy${name}`            // So that all icon names from this set will start with "Xy"
+        }
+      ],
+      // URL of the github repo
+      projectUrl: "https://github.com/xy/xy-icons",
+      license: "Apache License Version 2.0",        // License type
+      licenseUrl: "http://www.apache.org/licenses/" // URL of the license definition
+}
+```
+
+to the `icons` array.
+
+#### 6. Once everything builds and looks right in the preview, create a pull request
+
 ## Why React SVG components instead of fonts?
 
 SVG is [supported by all major browsers](http://caniuse.com/#search=svg). With `react-icons`, you can serve only the needed icons instead of one big font file to the users, helping you to recognize which icons are used in your project.
