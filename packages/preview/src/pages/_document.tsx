@@ -1,7 +1,7 @@
 import {
   BRAND_DESCRIPTION,
   BRAND_KEYWORDS,
-  BRAND_TITLE
+  BRAND_TITLE,
 } from "@utils/constants";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
@@ -21,6 +21,11 @@ class MyDocument extends Document {
           <meta name="description" content={BRAND_DESCRIPTION} />
           <meta name="keywords" content={BRAND_KEYWORDS} />
           <link rel="manifest" href="/manifest.json" />
+          <script
+            async
+            src="https://unpkg.com/pwacompat"
+            crossOrigin="anonymous"
+          ></script>
         </Head>
         <body>
           <Main />

@@ -5,8 +5,11 @@ import React from "react";
 function Icon({ icon, name }) {
   console.log(icon.iconSet);
   const copyToClipboard = () => {
-    copy(`import ${name} from '@meronex/icons/${icon.iconSet}/${name};'`);
-    toast.success(`Copied '${name}' to clipboard`, {
+    copy(`import ${name} from '@meronex/icons/${icon.iconSet}/${name}'
+    
+    
+    ;`);
+    toast.success(`Copied '${name}' from '${icon.iconSet}'`, {
       position: "bottom-center"
     });
   };
