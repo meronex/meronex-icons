@@ -73,6 +73,9 @@ async function convertIconData(svg, multiColor) {
                   obj[newName] = attribs[name];
                 }
                 break;
+              case "pId":
+                // React does not recognize the `pId` prop on a DOM element
+                break;
               case "class": // internal CSS
                 obj["className"] = attribs[name];
                 break;
