@@ -99,15 +99,17 @@ a {
     border: 2px solid transparent;
     outline: none;
     transition: all 0.1s ease;
-
+    font-size: 17px;
     &:focus {
       border-color: rgba(var(--color-brand-rgb), 0.5);
       background: rgba(var(--color-brand-rgb), 0.05);
     }
-
     &.active {
       border-color: transparent;
       font-weight: 600;
+    }
+    .link-set {
+      color: rgba(var(--color-brand-rgb), 0.8);
     }
   }
 }

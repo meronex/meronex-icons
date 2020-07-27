@@ -37,3 +37,18 @@
 [submodule "material-community-icons"]
 	path = packages/react-icons/src/icons/MaterialDesign
 	url = git@github.com:Templarian/MaterialDesign.git
+[submodule "packages/react-icons/src/icons/simple-icons"]
+	path = packages/react-icons/src/icons/simple-icons
+	url = https://github.com/simple-icons/simple-icons
+[submodule "packages/react-icons/src/icons/IcoMoon-Free"]
+	path = packages/react-icons/src/icons/IcoMoon-Free
+	url = https://github.com/Keyamoon/IcoMoon-Free
+[submodule "packages/react-icons/src/icons/heroicons"]
+	path = packages/react-icons/src/icons/heroicons
+	url = https://github.com/refactoringui/heroicons
+[submodule "packages/react-icons/src/icons/boxicons"]
+	path = packages/react-icons/src/icons/boxicons
+	url = https://github.com/atisawd/boxicons
+[submodule "packages/react-icons/src/icons/vscode-codicons"]
+	path = packages/react-icons/src/icons/vscode-codicons
+	url = https://github.com/microsoft/vscode-codicons.git

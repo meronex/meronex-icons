@@ -314,7 +314,7 @@ module.exports = {
     },
     {
       id: "mdc",
-      name: "Material Design Commumity Icons",
+      name: "Material Design Community Icons",
       contents: [
         {
           files: path.resolve(__dirname, "MaterialDesign/svg/*.svg"),
@@ -324,6 +324,62 @@ module.exports = {
       projectUrl: "https://github.com/templarian/MaterialDesign",
       license: "SIL",
       licenseUrl: "https://github.com/Templarian/MaterialDesign/blob/master/LICENSE"
+    },
+    {
+      id: "si",
+      name: "Simple Icons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "simple-icons/icons/*.svg"),
+          formatter: name => `Si${name}`
+        }
+      ],
+      projectUrl: "https://simpleicons.org/",
+      license: "CC0 1.0 Universal",
+      licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      id: "im",
+      name: "IcoMoon Free",
+      contents: [
+        {
+          files: path.resolve(__dirname, "icomoon-free/SVG/*.svg"),
+          formatter: name => `Im${name.slice(3)}`
+        }
+      ],
+      projectUrl: "https://github.com/Keyamoon/IcoMoon-Free",
+      license: "CC BY 4.0 License",
+      licenseUrl: "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      id: "hi",
+      name: "Heroicons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "heroicons/solid/*.svg"),
+          formatter: name => `Hi${name}`
+        },
+        {
+          files: path.resolve(__dirname, "heroicons/outline/*.svg"),
+          formatter: name => `HiOutline${name}`
+        }
+      ],
+      projectUrl: "https://github.com/refactoringui/heroicons",
+      license: "MIT",
+      licenseUrl: "https://opensource.org/licenses/MIT"
+    },
+    {
+      id: "vsc",
+      name: "VS Code Icons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "vscode-codicons/src/icons/*.svg"),
+          formatter: name => `Vsc${name}`
+        }
+      ],
+      projectUrl: "https://github.com/microsoft/vscode-codicons",
+      license: "CC BY 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by/4.0/"
     }
   ]
 };

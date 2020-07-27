@@ -434,7 +434,6 @@ async function main() {
     for (const icon of icons) {
       await writeIconModule(icon);
     }
-    await pushToPreview();
     console.log("done");
   } catch (e) {
     console.error(e);
