@@ -52,40 +52,45 @@ async function convertIconData(svg, multiColor) {
   const attrConverter = (
       /** @type {{[key: string]: string}} */ attribs,
       /** @type string */ tagName
-  ) =>
-      attribs &&
-      Object.keys(attribs)
-          .filter(
-              name =>
-                  !(
-                      [
-                        ...(tagName === "svg"
-                            ? ["xmlns", "xmlns:xlink", "xml:space", "width", "height"]
-                            : []) // if tagName is svg remove size attributes
-                      ].includes(name) || name === "data-name"
-                  ) // React doesn't like "data-name" (dataName) attribute in Predix icons
-          )
-          .reduce((obj, name) => {
-            const newName = camelcase(name);
-            switch (newName) {
-              case "fill":
-                  obj[newName] = attribs[name];
-                break;
-              case "pId":
-                // React does not recognize the `pId` prop on a DOM element
-                break;
-              case "class": // internal CSS
-                obj["className"] = attribs[name];
-                break;
-              case "style": // inline style
-                obj["style"] = cssToObj(attribs[name]);
-                break;
-              default:
+  ) => {
+    return attribs &&
+    Object.keys(attribs)
+        .filter(
+            name =>
+                !(
+                    [
+                      ...(tagName === "svg"
+                          ? ["xmlns", "xmlns:xlink", "xml:space", "width", "height"]
+                          : []) // if tagName is svg remove size attributes
+                    ].includes(name) || name === "data-name"
+                ) // React doesn't like "data-name" (dataName) attribute in Predix icons
+        )
+        .reduce((obj, name) => {
+          const newName = camelcase(name);
+          switch (newName) {
+            case "fill":
+              if (attribs[name] === "none" && tagName === "svg") {
+                obj[newName] = "currentColor";
+              } else {
                 obj[newName] = attribs[name];
-                break;
-            }
-            return obj;
-          }, {});
+              }
+              break;
+            case "pId":
+              // React does not recognize the `pId` prop on a DOM element
+              break;
+            case "class": // internal CSS
+              obj["className"] = attribs[name];
+              break;
+            case "style": // inline style
+              obj["style"] = cssToObj(attribs[name]);
+              break;
+            default:
+              obj[newName] = attribs[name];
+              break;
+          }
+          return obj;
+        }, {});
+  }
 
   // convert to [ { tag: 'path', attr: { d: 'M436 160c6.6 ...', ... }, child: { ... } } ]
   const elementToTree = (/** @type {Cheerio} */ element) =>
@@ -432,6 +437,7 @@ async function main() {
     for (const icon of icons) {
       await writeIconModule(icon);
     }
+    await  pushToPreview();
     console.log("done");
   } catch (e) {
     console.error(e);
