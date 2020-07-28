@@ -69,9 +69,7 @@ async function convertIconData(svg, multiColor) {
             const newName = camelcase(name);
             switch (newName) {
               case "fill":
-                if (attribs[name] === "none") {
                   obj[newName] = attribs[name];
-                }
                 break;
               case "pId":
                 // React does not recognize the `pId` prop on a DOM element

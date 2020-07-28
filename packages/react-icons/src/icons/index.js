@@ -380,6 +380,32 @@ module.exports = {
       projectUrl: "https://github.com/microsoft/vscode-codicons",
       license: "CC BY 4.0",
       licenseUrl: "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      id: "fl",
+      name: "Flags Icons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "flag-icon-css/flags/1x1/*.svg"),
+          formatter: name => `Fl${name}`
+        }
+      ],
+      projectUrl: "https://github.com/lipis/flag-icon-css",
+      license: "MIT License",
+      licenseUrl: "https://github.com/lipis/flag-icon-css/blob/master/LICENSE"
+    },
+    {
+      id: "lg",
+      name: "Logos Icons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "logos/logos/*.svg"),
+          formatter: name => `Lg${name}`
+        }
+      ],
+      projectUrl: "https://github.com/gilbarbara/logos",
+      license: "CC0 1.0 Universal",
+      licenseUrl: "https://github.com/gilbarbara/logos/blob/master/LICENSE.txt"
     }
   ]
 };

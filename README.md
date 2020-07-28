@@ -59,6 +59,8 @@ Icon Library|License|Version
 [IcoMoon Free](https://github.com/Keyamoon/IcoMoon-Free)|[CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)|1.0.0
 [BoxIcons](https://github.com/atisawd/boxicons)|[CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)|2.0.5
 [VS Code Icons](https://github.com/microsoft/vscode-codicons)|[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)|0.0.1
+[flag-icon-css](https://github.com/lipis/flag-icon-css)|[MIT License](https://github.com/lipis/flag-icon-css/blob/master/LICENSE)|3.5.0
+[Logos](https://github.com/gilbarbara/logos)|[CC0 1.0 Universal](https://github.com/gilbarbara/logos/blob/master/LICENSE.txt)|2018.01
 
 ## Configuration
 

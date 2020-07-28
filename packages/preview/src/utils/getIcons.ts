@@ -23,7 +23,7 @@ export async function getIcons(iconsId) {
   return import(`react-icons/${iconsId}/index`);
   ```
   */
-
   const result = await fn(iconsId);
+  console.log(result);
   return result;
 }
