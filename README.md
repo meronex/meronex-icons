@@ -1,5 +1,3 @@
-<img src="" width="120" alt="Meronex Icons">
-
 # [Meronex Icons](https://icons.meronex.com/) (react-icons fork)
 
 [![npm][npm-image]][npm-url]
