@@ -1,4 +1,4 @@
-# [Meronex Icons](https://icons.meronex.com/) (react-icons fork)
+# [Meronex React Icons](https://icons.meronex.com/) 
 
 [![npm][npm-image]][npm-url]
 
@@ -7,46 +7,9 @@
 
 Include popular icons in your React projects easily with `react-icons`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
-## Credits & Motivation for the fork
+[Check the icons here.](https://icons.meronex.com/)
 
-This is a fork of [react-icons](https://github.com/react-icons/react-icons) and was created specifically to resolve issue the bundling issue [#154, see here](https://github.com/react-icons/react-icons/issues/154).
 
-It was meant to be used temporary until the changes are merged upstream however due to the lack of activity in react-icons, I have decided to put it publicly due to the inactivity. 
-
-#### Why did you change the logo/theme of the preview site? 
-
-Again,this was meant for internal consumption, the bundle issue was show stopper for us. I shared it because I thought it might 
-help others, I hope those changes gets merged upstream. 
-
-#### What else did you change?
-
-I've merged some open pull requests, added icons and fixed some performance issue with the preview site, more specifically:
-
-- Added Icon Sets
-    - flag-icon-css
-    - IcoMoon Free
-    - Simple Icons
-    - Logos
-    - VS Code Icons
-    - Remix Icons fill
-    - Heroicons
-    - BoxIcons
-    
-- Merged open PRs 
-    - Remove pId attribute from AI icons [#310](https://github.com/react-icons/react-ic)
-    - Add support for stroke-based icons [#284](https://github.com/react-icons/react-icons/pull/284)
-    
-- Improved Preview Site
-    - Show the icon set next to the titles
-    - Improve search performance by caching results
-    - Copy the entire absolute URL so it can be easily inserted
- 
-#### Do you plan to keep maintaining it?
-
-I'd rather have the changes merged upstream, but I will keep this maintained if saves others time and effort and the main 
-react-icons remains in active. 
-
-   
 ## Installation
 
 ### Yarn
@@ -262,8 +225,49 @@ to the `icons` array.
 
 SVG is [supported by all major browsers](http://caniuse.com/#search=svg). With `react-icons`, you can serve only the needed icons instead of one big font file to the users, helping you to recognize which icons are used in your project.
 
+## Credits & Motivation for the fork
+
+This is a fork of [react-icons](https://github.com/react-icons/react-icons) and was created specifically to resolve issue the bundling issue [#154, see here](https://github.com/react-icons/react-icons/issues/154).
+
+It was meant to be used temporary until the changes are merged upstream however due to the lack of activity in react-icons, I have decided to put it publicly due to the inactivity. 
+
+#### Why did you change the logo/theme of the preview site? 
+
+Again,this was meant for internal consumption, the bundle issue was show stopper for us. I shared it because I thought it might 
+help others, I hope those changes gets merged upstream. 
+
+#### What else did you change?
+
+I've merged some open pull requests, added icons and fixed some performance issue with the preview site, more specifically:
+
+- Added Icon Sets
+    - flag-icon-css
+    - IcoMoon Free
+    - Simple Icons
+    - Logos
+    - VS Code Icons
+    - Remix Icons fill
+    - Heroicons
+    - BoxIcons
+    
+- Merged open PRs 
+    - Remove pId attribute from AI icons [#310](https://github.com/react-icons/react-ic)
+    - Add support for stroke-based icons [#284](https://github.com/react-icons/react-icons/pull/284)
+    
+- Improved Preview Site
+    - Show the icon set next to the titles
+    - Improve search performance by caching results
+    - Copy the entire absolute URL so it can be easily inserted
+ 
+#### Do you plan to keep maintaining it?
+
+I'd rather have the changes merged upstream, but I will keep this maintained if saves others time and effort and the main 
+react-icons remains in active. 
+
+   
 ## Related Projects
 
+- forked from [react-icons](https://github.com/react-icons/react-icons)
 - [react-svg-morph](https://github.com/gorangajic/react-svg-morph/)
 
 ## Licence
