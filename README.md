@@ -1,6 +1,6 @@
-<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
+<img src="" width="120" alt="Meronex Icons">
 
-# [React Icons](https://react-icons.netlify.com)
+# [Meronex Icons](https://icons.meronex.com/) (react-icons fork)
 
 [![npm][npm-image]][npm-url]
 
@@ -9,22 +9,62 @@
 
 Include popular icons in your React projects easily with `react-icons`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
+## Credits & Motivation for the fork
+
+This is a fork of [react-icons](https://github.com/react-icons/react-icons) and was created specifically to resolve issue the bundling issue [#154, see here](https://github.com/react-icons/react-icons/issues/154).
+
+It was meant to be used temporary until the changes are merged upstream however due to the lack of activity in react-icons, I have decided to put it publicly due to the inactivity. 
+
+#### Why did you change the logo/theme of the preview site? 
+
+Again,this was meant for internal consumption, the bundle issue was show stopper for us. I shared it because I thought it might 
+help others, I hope those changes gets merged upstream. 
+
+#### What else did you change?
+
+I've merged some open pull requests, added icons and fixed some performance issue with the preview site, more specifically:
+
+- Added Icon Sets
+    - flag-icon-css
+    - IcoMoon Free
+    - Simple Icons
+    - Logos
+    - VS Code Icons
+    - Remix Icons fill
+    - Heroicons
+    - BoxIcons
+    
+- Merged open PRs 
+    - Remove pId attribute from AI icons [#310](https://github.com/react-icons/react-ic)
+    - Add support for stroke-based icons [#284](https://github.com/react-icons/react-icons/pull/284)
+    
+- Improved Preview Site
+    - Show the icon set next to the titles
+    - Improve search performance by caching results
+    - Copy the entire absolute URL so it can be easily inserted
+ 
+#### Do you plan to keep maintaining it?
+
+I'd rather have the changes merged upstream, but I will keep this maintained if saves others time and effort and the main 
+react-icons remains in active. 
+
+   
 ## Installation
 
 ### Yarn
 ```bash
-yarn add react-icons
+yarn add @meronex/icons
 ```
 
 ### NPM
 ```bash
-npm install react-icons --save
+npm install @meronex/icons --save
 ```
 
 ## Usage
 
 ```jsx
-import { FaBeer } from 'react-icons/fa';
+import  FaBeer from '@meronex/icons/FaBeer';
 
 class Question extends React.Component {
     render() {
@@ -33,9 +73,9 @@ class Question extends React.Component {
 }
 ```
 
-[View the documentation](https://react-icons.netlify.com) for further usage examples and how to use icons from other packages. *NOTE*: each Icon package has it's own subfolder under `react-icons` you import from.
+[View the documentation](https://icons.meronex.com/) for further usage examples and how to use icons from other packages. *NOTE*: each Icon package has it's own subfolder under `@meronex/icons` you import from.
 
-For example, to use an icon from **Material Design**, your import would be: `import { ICON_NAME } from 'react-icons/md';`
+For example, to use an icon from **Material Design**, your import would be: `import  ICON_NAME  from 'react-icons/md/ICON_NAME';`
 
 ## Icons
 
@@ -44,6 +84,7 @@ Icon Library|License|Version
 [Font Awesome](https://fontawesome.com/)|[CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)|5.12.1
 [Ionicons](https://ionicons.com/)|[MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE)|4.5.6
 [Material Design icons](http://google.github.io/material-design-icons/)|[Apache License Version 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)|3.0.1
+[Material Design Community icons](https://github.com/templarian/MaterialDesign)|[SIL](https://github.com/google/material-design-icons/blob/master/LICENSE)|52442e9e6ea4424c41fb6489911c6f87fe83a7a8
 [Typicons](http://s-ings.com/typicons/)|[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)|2.0.9
 [Github Octicons icons](https://octicons.github.com/)|[MIT](https://github.com/primer/octicons/blob/master/LICENSE)|8.5.0
 [Feather](https://feathericons.com/)|[MIT](https://github.com/feathericons/feather/blob/master/LICENSE)|4.21.0
@@ -61,6 +102,8 @@ Icon Library|License|Version
 [VS Code Icons](https://github.com/microsoft/vscode-codicons)|[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)|0.0.1
 [flag-icon-css](https://github.com/lipis/flag-icon-css)|[MIT License](https://github.com/lipis/flag-icon-css/blob/master/LICENSE)|3.5.0
 [Logos](https://github.com/gilbarbara/logos)|[CC0 1.0 Universal](https://github.com/gilbarbara/logos/blob/master/LICENSE.txt)|2018.01
+[Simple Icons](https://simpleicons.org/)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)| 1.17.1-998-gd4b07ad4
+[Heroicons](https://github.com/refactoringui/heroicons)|[MIT](https://opensource.org/licenses/MIT)| v0.3.7
 
 ## Configuration
 
@@ -69,7 +112,7 @@ You can configure react-icons props using [React Context API](https://reactjs.or
 _Requires **React 16.3** or higher._
 
 ```jsx
-import { IconContext } from "react-icons";
+import { IconContext } from "@meronex/icons";
 
 <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>
   <div>
@@ -87,35 +130,6 @@ import { IconContext } from "react-icons";
 | `attr`      | `undefined`           | Overwritten by other attributes |
 | `title`     | `undefined`           | Icon description for accessibility |
 
-## Migrating from version 2 -> 3
-
-### Change import style
-
-Import path has changed. You need to rewrite from the old style.
-
-```jsx
-// OLD IMPORT STYLE
-import FaBeer from 'react-icons/lib/fa/beer';
-
-class Question extends React.Component {
-    render() {
-        return <h3> Lets go for a <FaBeer />? </h3>
-    }
-}
-```
-
-```jsx
-// NEW IMPORT STYLE
-import { FaBeer } from 'react-icons/fa';
-
-class Question extends React.Component {
-    render() {
-        return <h3> Lets go for a <FaBeer />? </h3>
-    }
-}
-```
-
-Ending up with a large JS bundle? Check out [this issue](https://github.com/react-icons/react-icons/issues/154).
 
 ### Adjustment CSS
 
@@ -145,16 +159,16 @@ CSS
 
 ### TypeScript native support
 
-Dependencies on `@types/react-icons` can be deleted.
+Dependencies on `@types/@meronex/icons` can be deleted.
 
 #### Yarn
 ```bash
-yarn remove @types/react-icons
+yarn remove @types/@meronex/icons
 ```
 
 #### NPM
 ```bash
-npm remove @types/react-icons
+npm remove @types/@meronex/icons
 ```
 
 ## Contributing
@@ -169,7 +183,7 @@ yarn build
 ```
 
 ### Preview
-The preview site is the [`react-icons`](https://react-icons.netlify.com/) website, built in [NextJS](https://nextjs.org/).
+The preview site is the [`meronex-icons`](https://icons.meronex.com) website, built in [NextJS](https://nextjs.org/).
 
 ```bash
 cd packages/react-icons

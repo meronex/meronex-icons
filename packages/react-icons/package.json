@@ -1,10 +1,11 @@
 {
   "name": "@meronex/icons",
-  "version": "1.0.23",
+  "version": "1.1.0",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "author": "Goran Gajic",
   "contributors": [
-    "kamijin_fanta <kamijin@live.jp>"
+    "kamijin_fanta <kamijin@live.jp>",
+    "ali_ogaili <ali@meronex.com>"
   ],
   "license": "MIT",
   "main": "lib",
@@ -12,7 +13,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:react-icons/react-icons.git"
+    "url": "git+ssh://git@github.com:aliogaili/meronex-icons.git"
   },
   "bugs": {
     "url": "https://github.com/react-icons/react-icons/issues"
