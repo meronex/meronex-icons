@@ -419,6 +419,19 @@ module.exports = {
       projectUrl: "https://github.com/twitter/twemoji",
       license: "MIT License",
       licenseUrl: "https://github.com/twitter/twemoji/blob/master/LICENSE"
+    },
+    {
+      id: "bi",
+      name: "Boxicons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "boxicons/svg/regular/*.svg"),
+          formatter: name => `Bi${name.replace("Bx", "")}`
+        }
+      ],
+      projectUrl: "https://github.com/atisawd/boxicons",
+      license: "CC BY 4.0 License",
+      licenseUrl: "https://creativecommons.org/licenses/by/4.0/"
     }
   ]
 };
