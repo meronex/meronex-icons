@@ -4,15 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.2.4](https://github.com/aliogaili/meronex-icons/compare/v1.2.3...v1.2.4) (2020-07-29)
 
-### [1.2.3](https://github.com/aliogaili/meronex-icons/compare/v1.2.2...v1.2.3) (2020-07-29)
-
-### [1.2.2](https://github.com/aliogaili/meronex-icons/compare/v1.2.1...v1.2.2) (2020-07-29)
-
-### [1.2.1](https://github.com/aliogaili/meronex-icons/compare/v1.2.0...v1.2.1) (2020-07-29)
-
-## [1.2.0](https://github.com/aliogaili/meronex-icons/compare/v3.10.0...v1.2.0) (2020-07-29)
-
-
 ### Features
 
 * add css.gg icons ([b9a3f51](https://github.com/aliogaili/meronex-icons/commit/b9a3f519206fec93ec771a18f73897fa4785333b))

@@ -18,8 +18,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "lerna": "^3.20.2",
     "netlify-cli": "^2.30.0",
-    "prettier": "^1.19.1",
-    "standard-version": "^8.0.2"
+    "prettier": "^1.19.1"
   },
   "scripts": {
     "submodule": "git submodule update --init",

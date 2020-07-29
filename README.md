@@ -38,7 +38,7 @@ npm install @meronex/icons --save
 ## Usage
 
 ```jsx
-import  FaBeer from '@meronex/icons/FaBeer';
+import FaBeer from '@meronex/icons/FaBeer';
 
 class Question extends React.Component {
     render() {
@@ -49,7 +49,7 @@ class Question extends React.Component {
 
 [View the documentation](https://icons.meronex.com/) for further usage examples and how to use icons from other packages. *NOTE*: each Icon package has it's own subfolder under `@meronex/icons` you import from.
 
-For example, to use an icon from **Material Design**, your import would be: `import  ICON_NAME  from 'react-icons/md/ICON_NAME';`
+For example, to use an icon from **Material Design**, your import would be: `import  ICON_NAME  from '@meronex/icons/md/ICON_NAME';`
 
 ## Icons
 
