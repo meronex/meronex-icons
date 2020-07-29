@@ -24,6 +24,5 @@ export async function getIcons(iconsId) {
   ```
   */
   const result = await fn(iconsId);
-  console.log(result);
   return result;
 }

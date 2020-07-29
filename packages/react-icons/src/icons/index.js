@@ -406,6 +406,19 @@ module.exports = {
       projectUrl: "https://github.com/gilbarbara/logos",
       license: "CC0 1.0 Universal",
       licenseUrl: "https://github.com/gilbarbara/logos/blob/master/LICENSE.txt"
+    },
+    {
+      id: "tw",
+      name: "Twitter Emoji",
+      contents: [
+        {
+          files: path.resolve(__dirname, "twemoji/assets/svg/*.svg"),
+          formatter: name => `Tw${name}`
+        }
+      ],
+      projectUrl: "https://github.com/twitter/twemoji",
+      license: "MIT License",
+      licenseUrl: "https://github.com/twitter/twemoji/blob/master/LICENSE"
     }
   ]
 };

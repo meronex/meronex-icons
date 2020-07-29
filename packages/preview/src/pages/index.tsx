@@ -33,12 +33,15 @@ export default function HomePage() {
       <ReactMarkdown source={CHANGELOG} />
       <h2>More info</h2>
       <p>
-        <a href="https://github.com/aliogaili/meronex-icons">
+        <a href="https://github.com/aliogaili/meronex-icons" target={"_blank"}>
           <LgGithubOctocat style={styleIcon} /> &nbsp; Github Repo &#8599;
         </a>
       </p>
       <p>
-        <a href="https://www.npmjs.com/package/@meronex/icons">
+        <a
+          href="https://www.npmjs.com/package/@meronex/icons"
+          target={"_blank"}
+        >
           <LgNpm style={styleIcon} /> &nbsp; NPM Package &#8599;
         </a>
       </p>
