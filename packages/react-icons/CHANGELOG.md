@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/aliogaili/meronex-icons/compare/v1.2.4...v1.3.0) (2020-07-29)
+
+
+### Features
+
+* add twemoji svg set ([20305ec](https://github.com/aliogaili/meronex-icons/commit/20305ec5106a70e0c3373d33327586a3d4fc9b14))
+
 ### [1.2.4](https://github.com/aliogaili/meronex-icons/compare/v1.2.3...v1.2.4) (2020-07-29)
 
 ### Features
