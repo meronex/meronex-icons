@@ -155,7 +155,22 @@ yarn submodule  # fetch icon sources
 cd packages/react-icons
 yarn build
 ```
-
+This project uses [Conventional Commits format](https://www.conventionalcommits.org/en/v1.0.0/) for the commit messages.
+```text
+    "build",
+    "chore",
+    "ci",
+    "docs",
+    "feat",
+    "fix",
+    "improve",
+    "perf",
+    "refactor",
+    "revert",
+    "style",
+    "test",
+ ```       
+        
 ### Preview
 The preview site is the [`meronex-icons`](https://icons.meronex.com) website, built in [NextJS](https://nextjs.org/).
 
