@@ -1,5 +1,6 @@
 # [Meronex React Icons](https://icons.meronex.com/) 
 
+
 [![npm][npm-image]][npm-url]
 
 [npm-image]: https://img.shields.io/npm/v/react-icons.svg?style=flat-square
@@ -7,17 +8,29 @@
 
 Include popular icons in your React projects easily with `react-icons`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
-[Check the icons here.](https://icons.meronex.com/)
+A react-icons fork, for credits and fork motivation [read here](#credits-and-motivation-for-the-fork).
+## DEMO & FEATURES
 
+Go to [icons.meronex.com](http://icons.meronex.com)
 
+<img src="https://icons.meronex.com/imgs/preview.png" public width="8000" alt="Meronex Icons">
+
+<br/>
+<br/>
+
+- Just add react component and modify the size, color, style, etc
+- Includes the most popular open source SVG icon sets
+- Import each icon independently preventing blowing up the bundle size
+- Fast search for all icons
+ 
 ## Installation
 
-### Yarn
+#### Yarn
 ```bash
 yarn add @meronex/icons
 ```
 
-### NPM
+#### NPM
 ```bash
 npm install @meronex/icons --save
 ```
@@ -171,32 +184,18 @@ yarn start
 
 From the main directory (where this file is located) run the following command:
 
-```bash	```bash
+```bash
 cd packages/react-icons	git submodule add --name <name> <git-repo-url-for-the-new-icon-set> packages/react-icons/src/icons/<name>
-yarn build	```
+yarn build	
+```
 
-
-cd ../demo	#### 2. Modify **README.md** (this document)
+#### 2. Modify **README.md** (this document)
 yarn start	
 Add the name, URL, and the license link to the table in the `##Icons` section of this file.
 Keep the list in alphabetical order.
 
-#### 3. Modify **packages/react-icons/.gitignore**
 
-Add the two-letter folder name for the new icon set, e.g.:
-
-```text
-...
-/xy/
-...
-```
-
-
-#### 4. Modify **packages/react-icons/LICENSE**
-
-Add license details about the new icon set.
-
-#### 5. Modify **packages/react-icons/src/icons/index.js**
+#### 3. Modify **packages/react-icons/src/icons/index.js**
 
 Add the object with the following structure:
 
@@ -219,22 +218,24 @@ Add the object with the following structure:
 
 to the `icons` array.
 
-#### 6. Once everything builds and looks right in the preview, create a pull request
+#### 4. Once everything builds and looks right in the preview, create a pull request
 
 ## Why React SVG components instead of fonts?
 
 SVG is [supported by all major browsers](http://caniuse.com/#search=svg). With `react-icons`, you can serve only the needed icons instead of one big font file to the users, helping you to recognize which icons are used in your project.
 
-## Credits & Motivation for the fork
+## Credits and motivation for the fork
 
-This is a fork of [react-icons](https://github.com/react-icons/react-icons) and was created specifically to resolve issue the bundling issue [#154, see here](https://github.com/react-icons/react-icons/issues/154).
+This is a fork of [react-icons](https://github.com/react-icons/react-icons) and was created specifically to resolve the bundling size issue [#154, see here](https://github.com/react-icons/react-icons/issues/154).
 
-It was meant to be used temporary until the changes are merged upstream however due to the lack of activity in react-icons, I have decided to put it publicly due to the inactivity. 
+It was meant to be used temporary until the fix PR merged upstream however due to the lack of activity at the react-icons repo, I have decided to put publish it as it could perhaps save others the patching time and effort I had to go through.
 
-#### Why did you change the logo/theme of the preview site? 
+#### Why did you change the logo/theme for the preview site? 
 
-Again,this was meant for internal consumption, the bundle issue was show stopper for us. I shared it because I thought it might 
-help others, I hope those changes gets merged upstream. 
+As I said that was initially meant for internal consumption, the bundle issue was a show stopper for us, I've submitted a PR which is not merged yet and this issue has been open for two plus years.
+I don't have time/desire to redo the preview site, so I just shared what I have.
+
+Feel free to fork edit and host else where if you need to as I did.
 
 #### What else did you change?
 
@@ -254,17 +255,17 @@ I've merged some open pull requests, added icons and fixed some performance issu
     - Remove pId attribute from AI icons [#310](https://github.com/react-icons/react-ic)
     - Add support for stroke-based icons [#284](https://github.com/react-icons/react-icons/pull/284)
     
-- Improved Preview Site
+- Improved the preview site
     - Show the icon set next to the titles
     - Improve search performance by caching results
     - Copy the entire absolute URL so it can be easily inserted
  
 #### Do you plan to keep maintaining it?
 
-I'd rather have the changes merged upstream, but I will keep this maintained if saves others time and effort and the main 
-react-icons remains in active. 
+I'd rather have the changes merged upstream I don't prefer fragmented react community, however I plan to keep this maintained until
+react-icons regains momentum. My view on this that if you publish open source, then you've to be responsible for the longevity of it when others depend on it 
+and willing to offer a hand, otherwise don't publish at all.
 
-   
 ## Related Projects
 
 - forked from [react-icons](https://github.com/react-icons/react-icons)
