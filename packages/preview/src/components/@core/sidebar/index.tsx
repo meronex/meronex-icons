@@ -31,7 +31,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="sidebar pt3">
+    <div className="sidebar pt2">
       <Heading isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <div className="search p2">
@@ -55,7 +55,7 @@ export default function Sidebar() {
         {iconsList.map(icon => (
           <li key={icon.id}>
             <ActiveLink href={{ pathname: "icons", query: { name: icon.id } }}>
-              <a className="rounded px2 py1">
+              <a className="rounded px2">
                 <span className="link-text">{icon.name}</span> -{" "}
                 <span className="link-set">{icon.id}</span>
               </a>
