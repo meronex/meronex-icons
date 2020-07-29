@@ -27,6 +27,12 @@ module.exports = withCSS(
         config.resolve.alias["@pages"] = path.join(__dirname, `src/pages`);
         config.resolve.alias["@styles"] = path.join(__dirname, `src/styles`);
         config.resolve.alias["@utils"] = path.join(__dirname, `src/utils`);
+        config.module.rules.push(
+              {
+                  test: /\.md$/,
+                  use: 'raw-loader'
+              }
+          )
         return config;
       },
       assetPrefix: process.env.BASE_PATH || "",

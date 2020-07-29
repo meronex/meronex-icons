@@ -5,7 +5,7 @@ export const BRAND_DESCRIPTION =
 export const BRAND_KEYWORDS = "React, Icons, Tree Shaking, SVG";
 
 export const HOME_USAGE = `
-import { FaBeer } from 'react-icons/fa';
+import FaBeer from '@meronex/icons/fa/FaBeer';
 
 class Question extends React.Component {
   render() {
