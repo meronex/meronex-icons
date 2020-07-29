@@ -1,17 +1,10 @@
 const withSass = require("@zeit/next-sass");
 const withCSS = require("@zeit/next-css");
-const withPWA = require("next-pwa");
 
 const path = require("path");
 
 module.exports = withCSS(
-  withSass(
-    withPWA({
-      pwa: {
-        dest: "public",
-        register: true,
-        scope: "/"
-      },
+  withSass({
       experimental: {
         publicDirectory: true
       },
@@ -40,5 +33,4 @@ module.exports = withCSS(
         basePath: process.env.BASE_PATH || ""
       }
     })
-  )
 );
