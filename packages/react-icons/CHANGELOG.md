@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/aliogaili/meronex-icons/compare/v1.4.0...v1.4.1) (2020-07-31)
+
+
+### Bug Fixes
+
+* adjust the fill attribute based on the value defined in the icon set ([873972f](https://github.com/aliogaili/meronex-icons/commit/873972f0db98227a357f1f332bf1130ba97d55b2))
+* parse all boxicons icons not just regular folder and fix typos ([2230756](https://github.com/aliogaili/meronex-icons/commit/223075616e73b3321f2842257384cc2dd0446a32))
+
 ## [1.4.0](https://github.com/aliogaili/meronex-icons/compare/v1.3.0...v1.4.0) (2020-07-29)
 
 
