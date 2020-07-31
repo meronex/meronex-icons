@@ -63,11 +63,11 @@ export function IconBase(props:IconBaseProps & { attr?: {}}): JSX.Element {
     let className;
     if (conf.className) className = conf.className;
     if (props.className) className = (className ? className + ' ' : '') + props.className;
-    let {attr, fill ,title, hasStrokes, ...svgProps} = props;
+    let {attr, fill, title, hasStrokes, ...svgProps} = props;
 
     // If the icon has explicit "stroke" attribute, do NOT set zero stroke width
     const stroke =  hasStrokes? null : { strokeWidth: 0 };
-    fill = "currentColor";
+    fill = fill || "none";
     return (
       <svg
         stroke="currentColor"
