@@ -53,8 +53,18 @@ async function convertIconData(svg, multiColor) {
       /** @type {{[key: string]: string}} */ attribs,
       /** @type string */ tagName
   ) => {
-    return attribs &&
-    Object.keys(attribs)
+    if(!attribs) {
+      return null;
+    }
+    // ensure there is a fill attribute defined in the svg tag
+    // if is not explicity defined or none, then use the currentColor
+    // for example Font Awesome does not include a fill attribute
+    // in that case we just assume the currentColor
+    if(tagName === 'svg' && !attribs['fill'] )  {
+      attribs['fill'] = 'currentColor'
+    }
+
+   return Object.keys(attribs)
         .filter(
             name =>
                 !(
@@ -69,11 +79,7 @@ async function convertIconData(svg, multiColor) {
           const newName = camelcase(name);
           switch (newName) {
             case "fill":
-              if (attribs[name] === "none" && tagName === "svg") {
-                obj[newName] = "currentColor";
-              } else {
-                obj[newName] = attribs[name];
-              }
+              obj[newName] = attribs[name];
               break;
             case "pId":
               // React does not recognize the `pId` prop on a DOM element

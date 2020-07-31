@@ -67,7 +67,6 @@ export function IconBase(props:IconBaseProps & { attr?: {}}): JSX.Element {
 
     // If the icon has explicit "stroke" attribute, do NOT set zero stroke width
     const stroke =  hasStrokes? null : { strokeWidth: 0 };
-    fill = "currentColor";
     return (
       <svg
         stroke="currentColor"
