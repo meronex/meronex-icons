@@ -425,7 +425,7 @@ module.exports = {
       name: "Boxicons",
       contents: [
         {
-          files: path.resolve(__dirname, "boxicons/svg/regular/*.svg"),
+          files: path.resolve(__dirname, "boxicons/svg/*/*.svg"),
           formatter: name => `Bi${name.replace("Bx", "")}`
         }
       ],
