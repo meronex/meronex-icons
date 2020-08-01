@@ -420,7 +420,7 @@ async function pushToPreview() {
   for (const icon of icons) {
     const sourceDir = path.join(__dirname, "..", icon.id);
     const targetDir = path.join(
-        "../node_modules/@meronex/icons",
+        "../../node_modules/@meronex/icons",
         icon.id
     );
 
