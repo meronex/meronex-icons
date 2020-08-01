@@ -78,7 +78,6 @@ Icon Library|License|Version
 [Logos](https://github.com/gilbarbara/logos)|[CC0 1.0 Universal](https://github.com/gilbarbara/logos/blob/master/LICENSE.txt)|2018.01
 [Simple Icons](https://simpleicons.org/)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)| 1.17.1-998-gd4b07ad4
 [Heroicons](https://github.com/refactoringui/heroicons)|[MIT](https://opensource.org/licenses/MIT)| v0.3.7
-[Twemoji](https://github.com/twitter/twemoji)|[MIT](https://opensource.org/licenses/MIT)| v13.01
 
 ## Configuration
 
