@@ -13,7 +13,7 @@ module.exports = codes;
 // module.exports = "import('react-icons/fa/index')"
 `;
 
-export async function getIcons(iconsId) {
+export function getIcons(iconsId) {
   /*
   Dynamic Import with improved performance.
   Macros are used to avoid bundling unnecessary modules.
@@ -23,6 +23,6 @@ export async function getIcons(iconsId) {
   return import(`react-icons/${iconsId}/index`);
   ```
   */
-  const result = await fn(iconsId);
+  const result = fn(iconsId);
   return result;
 }
