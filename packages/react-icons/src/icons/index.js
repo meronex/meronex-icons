@@ -461,6 +461,20 @@ module.exports = {
       projectUrl: "https://github.com/meronex/foundation-icons-3",
       license: "MIT",
       licenseUrl: "https://opensource.org/licenses/MIT"
+    },
+    {
+      id: "zo",
+      name: "Zondicons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "zondicons/src/*.svg"),
+          formatter: name => `Zo${name}`
+
+        }
+      ],
+      projectUrl: "https://github.com/dukestreetstudio/zondicons",
+      license: "MIT",
+      licenseUrl: "https://opensource.org/licenses/MIT"
     }
   ]
 };

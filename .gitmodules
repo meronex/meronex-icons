@@ -70,3 +70,6 @@
 [submodule "packages/react-icons/src/icons/foundation-icons-3"]
 	path = packages/react-icons/src/icons/foundation-icons-3
 	url = https://github.com/meronex/foundation-icons-3.git
+[submodule "packages/react-icons/src/icons/zondicons"]
+	path = packages/react-icons/src/icons/zondicons
+	url = https://github.com/dukestreetstudio/zondicons.git
