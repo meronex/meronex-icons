@@ -80,7 +80,7 @@
     "build-mjs": "tsc && babel ./lib/esm -d ./lib/esm",
     "build-cjs": "tsc -p ./tsconfig.commonjs.json",
     "check-env": "node -e 'console.log(process.env)' | grep npm",
-    "release": "standard-version && git push --follow-tags origin master && npm publish"
+    "release": "standard-version && git push --follow-tags origin master"
   },
   "dependencies": {
     "camelcase": "^5.0.0",
