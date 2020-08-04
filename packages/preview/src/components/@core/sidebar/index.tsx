@@ -13,18 +13,18 @@ export default function Sidebar() {
 
   const { setQuery, setResults } = React.useContext(Context);
 
-  const onSearch = e => {
+  const onSearch = (e) => {
     setQuery(e.target.value.toLowerCase());
-    setResults(prevResult => {
-      return {}
+    setResults((prevResult) => {
+      return {};
     });
   };
 
-  const goToSearch = e => {
+  const goToSearch = (e) => {
     router.push("/search");
   };
 
-  const onBlur = event => {
+  const onBlur = (event) => {
     if (event.target.value.length === 0) {
       window && window.history.back();
     }
@@ -49,15 +49,17 @@ export default function Sidebar() {
       <ul className={`sidebar--links ${isOpen && "active"}`}>
         <li>
           <ActiveLink href="/">
-            <a className="rounded px2 py1">Home</a>
+            <a className="rounded px2 py1" style={{ fontSize: "16px" }}>
+              Home
+            </a>
           </ActiveLink>
         </li>
-        {iconsList.map(icon => (
+        {iconsList.map((icon) => (
           <li key={icon.id}>
             <ActiveLink href={{ pathname: "icons", query: { name: icon.id } }}>
               <a className="rounded px2">
-                <span className="link-text">{icon.name}</span> -{" "}
-                <span className="link-set">{icon.id}</span>
+                <span className="link-text">{icon.name}</span>&nbsp;(
+                <span className="link-set">{icon.id}</span>)
               </a>
             </ActiveLink>
           </li>
