@@ -35,17 +35,18 @@ Icon Library|License|Version
 [Remix Icon](https://github.com/Remix-Design/RemixIcon)|[Apache License Version 2.0](http://www.apache.org/licenses/)|2.3.0
 [Flat Color Icons](https://github.com/icons8/flat-color-icons)|[MIT](https://opensource.org/licenses/MIT)|1.0.2
 [Grommet-Icons](https://github.com/grommet/grommet-icons)|[Apache License Version 2.0](http://www.apache.org/licenses/)|4.4.0
-[css.gg](https://github.com/astrit/css.gg)|[MIT](https://opensource.org/licenses/MIT)|2.0.0
+[css.gg](https://github.com/astrit/css.gg)|[MIT](https://opensource.org/licenses/MIT)| 2.0.0
 [IcoMoon Free](https://github.com/Keyamoon/IcoMoon-Free)|[CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)|1.0.0
-[BoxIcons](https://github.com/atisawd/boxicons)|[CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)|2.0.5
-[VS Code Icons](https://github.com/microsoft/vscode-codicons)|[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)|0.0.1
-[flag-icon-css](https://github.com/lipis/flag-icon-css)|[MIT License](https://github.com/lipis/flag-icon-css/blob/master/LICENSE)|3.5.0
+[BoxIcons](https://github.com/atisawd/boxicons)|[CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)| 2.0.5
+[VS Code Icons](https://github.com/microsoft/vscode-codicons)|[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)| 0.0.1
+[flag-icon-css](https://github.com/lipis/flag-icon-css)|[MIT License](https://github.com/lipis/flag-icon-css/blob/master/LICENSE)| 3.5.0
 [Logos](https://github.com/gilbarbara/logos)|[CC0 1.0 Universal](https://github.com/gilbarbara/logos/blob/master/LICENSE.txt)|2018.01
 [Simple Icons](https://simpleicons.org/)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)| 1.17.1-998-gd4b07ad4
 [Heroicons](https://github.com/refactoringui/heroicons)|[MIT](https://opensource.org/licenses/MIT)| v0.3.7
-[Foundation-Icons-3](https://zurb.com/playground/foundation-icon-fonts-3)|[MIT](https://opensource.org/licenses/MIT)| V3
+[Foundation-Icons-3](https://zurb.com/playground/foundation-icon-fonts-3)|[MIT](https://opensource.org/licenses/MIT)| v3
 [Zondicons](https://github.com/dukestreetstudio/zondicons)|[MIT](https://opensource.org/licenses/MIT)| v0.1.0
 [Evil Icons](https://github.com/evil-icons/evil-icons)|[MIT](https://opensource.org/licenses/MIT)| 1.10.1
+[Open Iconic](https://github.com/iconic/open-iconic)|[MIT](https://opensource.org/licenses/MIT)| v1.1.1
 
 - Just add react component and modify the size, color, style, etc
 - Includes the most popular open source SVG icon sets
