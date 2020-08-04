@@ -11,47 +11,12 @@ Include popular icons in your React projects easily with `react-icons`, which ut
 A react-icons fork, for credits and fork motivation [read here](#credits-and-motivation-for-the-fork).
 ## DEMO & FEATURES
 
-Go to [icons.meronex.com](http://icons.meronex.com)
+Preview site at [icons.meronex.com](http://icons.meronex.com)
 
 <img src="https://icons.meronex.com/imgs/preview.png" public width="8000" alt="Meronex Icons">
 
 <br/>
 <br/>
-
-- Just add react component and modify the size, color, style, etc
-- Includes the most popular open source SVG icon sets
-- Import each icon independently preventing blowing up the bundle size
-- Fast search for all icons
- 
-## Installation
-
-#### Yarn
-```bash
-yarn add @meronex/icons
-```
-
-#### NPM
-```bash
-npm install @meronex/icons --save
-```
-
-## Usage
-
-```jsx
-import FaBeer from '@meronex/icons/FaBeer';
-
-class Question extends React.Component {
-    render() {
-        return <h3> Lets go for a <FaBeer />? </h3>
-    }
-}
-```
-
-[View the documentation](https://icons.meronex.com/) for further usage examples and how to use icons from other packages. *NOTE*: each Icon package has it's own subfolder under `@meronex/icons` you import from.
-
-For example, to use an icon from **Material Design**, your import would be: `import  ICON_NAME  from '@meronex/icons/md/ICON_NAME';`
-
-## Icons
 
 Icon Library|License|Version
 ---|---|---
@@ -79,6 +44,52 @@ Icon Library|License|Version
 [Simple Icons](https://simpleicons.org/)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)| 1.17.1-998-gd4b07ad4
 [Heroicons](https://github.com/refactoringui/heroicons)|[MIT](https://opensource.org/licenses/MIT)| v0.3.7
 [Foundation-Icons-3](https://zurb.com/playground/foundation-icon-fonts-3)|[MIT](https://opensource.org/licenses/MIT)| v0.3.7
+
+- Just add react component and modify the size, color, style, etc
+- Includes the most popular open source SVG icon sets
+- Import each icon independently preventing blowing up the bundle size
+- Fast search for all icons
+ 
+## Installation
+
+#### Yarn
+```bash
+yarn add @meronex/icons
+```
+
+#### NPM
+```bash
+npm install @meronex/icons --save
+```
+
+## Usage
+
+Default import (use if you don't have tree shaking)
+
+```jsx
+import FaBeer from '@meronex/icons/fa/FaBeer';
+
+class Question extends React.Component {
+    render() {
+        return <h3> Lets go for a <FaBeer />? </h3>
+    }
+}
+```
+Named import (use with tree shaking)
+
+```jsx
+import { FaBeer } from '@meronex/icons/fa';
+
+class Question extends React.Component {
+    render() {
+        return <h3> Lets go for a <FaBeer />? </h3>
+    }
+}
+```
+
+[View the documentation](https://icons.meronex.com/) for further usage examples and how to use icons from other packages. *NOTE*: each Icon package has it's own subfolder under `@meronex/icons` you import from.
+
+For example, to use an icon from **Material Design**, your import would be: `import  ICON_NAME  from '@meronex/icons/md/ICON_NAME';`
 
 ## Configuration
 
