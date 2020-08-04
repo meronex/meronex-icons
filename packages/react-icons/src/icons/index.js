@@ -499,6 +499,19 @@ module.exports = {
       projectUrl: "https://github.com/iconic/open-iconic",
       license: "MIT",
       licenseUrl: "https://opensource.org/licenses/MIT"
+    },
+    {
+      id: "su",
+      name: "System Uicons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "system-uicons/src/images/icons/*.svg"),
+          formatter: name => `Su${name}`
+        }
+      ],
+      projectUrl: "https://github.com/CoreyGinnivan/system-uicons",
+      license: "The Unlicense",
+      licenseUrl: "https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE"
     }
   ]
 };

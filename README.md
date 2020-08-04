@@ -48,6 +48,7 @@ Icon Library|License|Version
 [Zondicons](https://github.com/dukestreetstudio/zondicons)|[MIT](https://opensource.org/licenses/MIT)| v0.1.0
 [Evil Icons](https://github.com/evil-icons/evil-icons)|[MIT](https://opensource.org/licenses/MIT)| 1.10.1
 [Open Iconic](https://github.com/iconic/open-iconic)|[MIT](https://opensource.org/licenses/MIT)| v1.1.1
+[System Uicons](https://github.com/CoreyGinnivan/system-uicons)|[The Unlicense](https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE)| 53a7811705be2aaa37ddbe01fd255225083eed63
 
 - Just add react component and modify the size, color, style, etc
 - Includes the most popular open source SVG icon sets

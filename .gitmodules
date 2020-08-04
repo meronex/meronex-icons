@@ -76,3 +76,6 @@
 [submodule "packages/react-icons/src/icons/open-iconic"]
 	path = packages/react-icons/src/icons/open-iconic
 	url = https://github.com/iconic/open-iconic
+[submodule "packages/react-icons/src/icons/system-uicons"]
+	path = packages/react-icons/src/icons/system-uicons
+	url = https://github.com/CoreyGinnivan/system-uicons
