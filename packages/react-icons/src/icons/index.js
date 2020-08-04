@@ -447,6 +447,20 @@ module.exports = {
       projectUrl: "https://github.com/hypermodules/entypo",
       license: "ISC License",
       licenseUrl: "https://github.com/hypermodules/entypo/blob/master/LICENSE.md"
+    },
+    {
+      id: "fd",
+      name: "Foundation",
+      contents: [
+        {
+          files: path.resolve(__dirname, "foundation-icons-3/svgs/*.svg"),
+          formatter: name => `Fd${name.replace("Fi", "")}`
+
+        }
+      ],
+      projectUrl: "https://github.com/meronex/foundation-icons-3",
+      license: "MIT",
+      licenseUrl: "https://opensource.org/licenses/MIT"
     }
   ]
 };
