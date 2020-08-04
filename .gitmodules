@@ -61,3 +61,9 @@
 [submodule "packages/react-icons/src/icons/twemoji"]
 	path = packages/react-icons/src/icons/twemoji
 	url = https://github.com/twitter/twemoji.git
+[submodule "packages/react-icons/src/icons/cryptocurrency-icons"]
+	path = packages/react-icons/src/icons/cryptocurrency-icons
+	url = https://github.com/spothq/cryptocurrency-icons
+[submodule "packages/react-icons/src/icons/entypo"]
+	path = packages/react-icons/src/icons/entypo
+	url = https://github.com/hypermodules/entypo.git

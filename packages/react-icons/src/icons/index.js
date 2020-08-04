@@ -406,7 +406,7 @@ module.exports = {
       projectUrl: "https://github.com/gilbarbara/logos",
       license: "CC0 1.0 Universal",
       licenseUrl: "https://github.com/gilbarbara/logos/blob/master/LICENSE.txt"
-    },å
+    },
     {
       id: "bi",
       name: "Boxicons",
@@ -419,6 +419,34 @@ module.exports = {
       projectUrl: "https://github.com/atisawd/boxicons",
       license: "CC BY 4.0 License",
       licenseUrl: "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      id: "cr",
+      name: "Cryptoicons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "cryptocurrency-icons/svg/black/*.svg"),
+          formatter: name => `Cr${name}`
+        }
+      ],
+      projectUrl: "https://github.com/spothq/cryptocurrency-icons",
+      license: "CC0 1.0 Universal",
+      licenseUrl: "https://github.com/spothq/cryptocurrency-icons/blob/master/LICENSE.md"
+    },
+    {
+      id: "en",
+      name: "Entypo",
+      contents: [
+        {
+          files: path.resolve(__dirname, "entypo/src/*/*.svg"),
+          formatter: name => {
+            return `En${name.replace("+", "Plus").replace('%', 'Percent')}`
+          }
+        }
+      ],
+      projectUrl: "https://github.com/hypermodules/entypo",
+      license: "ISC License",
+      licenseUrl: "https://github.com/hypermodules/entypo/blob/master/LICENSE.md"
     }
   ]
 };
