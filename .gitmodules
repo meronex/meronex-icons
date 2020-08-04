@@ -73,3 +73,6 @@
 [submodule "packages/react-icons/src/icons/evil-icons"]
 	path = packages/react-icons/src/icons/evil-icons
 	url = https://github.com/evil-icons/evil-icons.git
+[submodule "packages/react-icons/src/icons/open-iconic"]
+	path = packages/react-icons/src/icons/open-iconic
+	url = https://github.com/iconic/open-iconic

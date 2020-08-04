@@ -23,15 +23,14 @@ module.exports = {
       licenseUrl: "https://creativecommons.org/licenses/by/4.0/"
     },
     {
-      id: "io",
+      id: "ios",
       name: "Ionicons",
       contents: [
         {
           files: path.resolve(
             __dirname,
             "../../../../node_modules/ionicons/dist/collection/icon/svg/*.svg"
-          ),
-          formatter: name => `Io${name}`
+          )
         }
       ],
       projectUrl: "https://ionicons.com/",
@@ -40,7 +39,7 @@ module.exports = {
     },
     {
       id: "md",
-      name: "Material Design icons",
+      name: "Material Design Icons",
       contents: [
         {
           files: path.resolve(
@@ -314,7 +313,7 @@ module.exports = {
     },
     {
       id: "mdc",
-      name: "Material Design Community Icons",
+      name: "MD Community Icons",
       contents: [
         {
           files: path.resolve(__dirname, "MaterialDesign/svg/*.svg"),
@@ -485,6 +484,19 @@ module.exports = {
         }
       ],
       projectUrl: "https://github.com/dukestreetstudio/zondicons",
+      license: "MIT",
+      licenseUrl: "https://opensource.org/licenses/MIT"
+    },
+    {
+      id: "oi",
+      name: "Open Iconic",
+      contents: [
+        {
+          files: path.resolve(__dirname, "open-iconic/svg/*.svg"),
+          formatter: name => `Oi${name}`
+        }
+      ],
+      projectUrl: "https://github.com/iconic/open-iconic",
       license: "MIT",
       licenseUrl: "https://opensource.org/licenses/MIT"
     }
