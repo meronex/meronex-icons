@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/aliogaili/meronex-icons/compare/v1.4.1...v2.0.0) (2020-08-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* removing twitter emoji
+
+### Features
+
+* add crypto and entypo ([6051869](https://github.com/aliogaili/meronex-icons/commit/60518693c6eef39eded12b16ffa3f84e96d6482c))
+* add foundation icons 3 ([3bee803](https://github.com/aliogaili/meronex-icons/commit/3bee8033af4dd931f077f4daeac1ab582e94ddee))
+* add open iconic icon pack ([2077718](https://github.com/aliogaili/meronex-icons/commit/2077718d9373cd929d9564099ad016ff45cc7f25))
+* add system uicons ([36caccc](https://github.com/aliogaili/meronex-icons/commit/36cacccf027dc6aaa7d9e579f2e27bf8642a12e7))
+* add zondicons pack set ([c99eb7f](https://github.com/aliogaili/meronex-icons/commit/c99eb7f341d8974403a533ec89e044524ac7c034))
+* added evil icons pack set ([e9a0b02](https://github.com/aliogaili/meronex-icons/commit/e9a0b02d74025e1d802d2cc71d48f0c6496f1f2d))
+
+
+### Bug Fixes
+
+* fix the preview path to point to the correct folder ([9db1772](https://github.com/aliogaili/meronex-icons/commit/9db1772b8c03d462966c2efc68ea8ceaf860c0bc))
+* removing twitter emoji ([b9865c3](https://github.com/aliogaili/meronex-icons/commit/b9865c375fdd665f06bd4ec347ac3bebf20d7e4e))
+* undefined object error ([f5c1700](https://github.com/aliogaili/meronex-icons/commit/f5c1700ea20e016611bb770bead222fbf53bbde2))
+
 ### [1.4.1](https://github.com/aliogaili/meronex-icons/compare/v1.4.0...v1.4.1) (2020-07-31)
 
 
