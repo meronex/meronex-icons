@@ -1,4 +1,4 @@
-# [Meronex React Icons](https://icons.meronex.com/) 
+# [Meronex Icons](https://icons.meronex.com/) 
 
 
 [![npm][npm-image]][npm-url]
@@ -6,9 +6,10 @@
 [npm-image]: https://img.shields.io/npm/v/react-icons.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-icons
 
-Include popular icons in your React projects easily with `react-icons`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+Choose from thousands of popular open source SVG icon packs and add them to your React projects easily with `@meronex/icons`.
 
-A react-icons fork, for credits and fork motivation [read here](#credits-and-motivation-for-the-fork).
+Meronex icons is a [react-icons](https://github.com/react-icons/react-icons) fork, [read here](#credits-and-motivation-for-the-fork) for credits and fork motivation.
+
 ## DEMO & FEATURES
 
 Preview site at [icons.meronex.com](http://icons.meronex.com)
