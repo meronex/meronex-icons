@@ -414,25 +414,7 @@ async function writeIconVersions() {
   );
 }
 
-async function pushToPreview() {
-  const ncp = require("ncp").ncp;
-
-  for (const icon of icons) {
-    const sourceDir = path.join(__dirname, "..", icon.id);
-    const targetDir = path.join(
-        "../../node_modules/@meronex/icons",
-        icon.id
-    );
-
-    await ncp(sourceDir, targetDir);
-
-    console.log(`pushed ${sourceDir} to ${targetDir}`);
-  }
-}
-
 async function main() {
-
-  console.log(process.env);
 
   try {
     await dirInit();
@@ -443,7 +425,6 @@ async function main() {
     for (const icon of icons) {
       await writeIconModule(icon);
     }
-    await  pushToPreview();
     console.log("done");
   } catch (e) {
     console.error(e);
