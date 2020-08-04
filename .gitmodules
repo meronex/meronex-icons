@@ -73,3 +73,6 @@
 [submodule "packages/react-icons/src/icons/zondicons"]
 	path = packages/react-icons/src/icons/zondicons
 	url = https://github.com/dukestreetstudio/zondicons.git
+[submodule "packages/react-icons/src/icons/evil-icons"]
+	path = packages/react-icons/src/icons/evil-icons
+	url = https://github.com/evil-icons/evil-icons.git

@@ -475,6 +475,18 @@ module.exports = {
       projectUrl: "https://github.com/dukestreetstudio/zondicons",
       license: "MIT",
       licenseUrl: "https://opensource.org/licenses/MIT"
+    },
+    {
+      id: "ei",
+      name: "Evil Icons",
+      contents: [
+        {
+          files: path.resolve(__dirname, "evil-icons/assets/icons/*.svg"),
+        }
+      ],
+      projectUrl: "https://github.com/dukestreetstudio/zondicons",
+      license: "MIT",
+      licenseUrl: "https://opensource.org/licenses/MIT"
     }
   ]
 };

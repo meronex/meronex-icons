@@ -45,6 +45,7 @@ Icon Library|License|Version
 [Heroicons](https://github.com/refactoringui/heroicons)|[MIT](https://opensource.org/licenses/MIT)| v0.3.7
 [Foundation-Icons-3](https://zurb.com/playground/foundation-icon-fonts-3)|[MIT](https://opensource.org/licenses/MIT)| V3
 [Zondicons](https://github.com/dukestreetstudio/zondicons)|[MIT](https://opensource.org/licenses/MIT)| v0.1.0
+[Evil Icons](https://github.com/evil-icons/evil-icons)|[MIT](https://opensource.org/licenses/MIT)| 1.10.1
 
 - Just add react component and modify the size, color, style, etc
 - Includes the most popular open source SVG icon sets
