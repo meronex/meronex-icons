@@ -9,6 +9,7 @@ import { BRAND_TITLE, HOME_USAGE } from "@utils/constants";
 
 import React from "react";
 
+const ROADMAP = require("../../../../Roadmap.md").default;
 const CHANGELOG = require("@meronex/icons/CHANGELOG.md").default;
 
 export default function HomePage() {
@@ -21,15 +22,14 @@ export default function HomePage() {
     <Container title={BRAND_TITLE}>
       <Badges />
       <p>
-        Include popular icons in your React projects easily with react-icons,
-        which utilizes ES6 imports that allows you to include only the icons
-        that your project is using.
+        Choose from thousands of popular open source SVG icon packs and add them
+        easily to your React projects with meronex icons.
       </p>
       <h1>Installation</h1>
       <CodeBlock code={`npm install @meronex/icons --save`} />
       <h1>Usage</h1>
       <CodeBlock code={HOME_USAGE} />
-
+      <ReactMarkdown source={ROADMAP} />
       <ReactMarkdown source={CHANGELOG} />
       <h2>More info</h2>
       <p>

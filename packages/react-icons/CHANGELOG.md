@@ -4,8 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.0.1](https://github.com/aliogaili/meronex-icons/compare/v2.0.0...v2.0.1) (2020-08-04)
 
-## [2.0.0](https://github.com/aliogaili/meronex-icons/compare/v1.4.1...v2.0.0) (2020-08-04)
+### DOCS
+* update README content 
 
+## [2.0.0](https://github.com/aliogaili/meronex-icons/compare/v1.4.1...v2.0.0) (2020-08-04)
 
 ### ⚠ BREAKING CHANGES
 
