@@ -17,7 +17,6 @@ class MyDocument extends Document {
         <Head>
           <link rel="shortcut icon" href="/favicon.png" />
           <meta name="theme-color" content="#F47847" />
-          <title>Meronex Icons — React Icons Package</title>
           <meta name="title" content="Meronex Icons — React Icons Package" />
           <meta
             name="description"
