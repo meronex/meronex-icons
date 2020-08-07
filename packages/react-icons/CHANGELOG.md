@@ -17,7 +17,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-* removing twitter emoji
+* remove twitter emoji
+* rename ```IosIosIconXXXX``` to ```IosIconeXXXX```. In case that you have been using a 1.x.x release, 
+if an icon imports breaks such as (IosIosXXXX) icons then you can find those icons again in the latest preview site (or http://icons-v2.meronex.com) and
+re-import them again
 
 ### Features
 
@@ -26,14 +29,14 @@ All notable changes to this project will be documented in this file. See [standa
 * add open iconic icon pack ([2077718](https://github.com/aliogaili/meronex-icons/commit/2077718d9373cd929d9564099ad016ff45cc7f25))
 * add system uicons ([36caccc](https://github.com/aliogaili/meronex-icons/commit/36cacccf027dc6aaa7d9e579f2e27bf8642a12e7))
 * add zondicons pack set ([c99eb7f](https://github.com/aliogaili/meronex-icons/commit/c99eb7f341d8974403a533ec89e044524ac7c034))
-* added evil icons pack set ([e9a0b02](https://github.com/aliogaili/meronex-icons/commit/e9a0b02d74025e1d802d2cc71d48f0c6496f1f2d))
+* add evil icons pack set ([e9a0b02](https://github.com/aliogaili/meronex-icons/commit/e9a0b02d74025e1d802d2cc71d48f0c6496f1f2d))
 
 
 ### Bug Fixes
 
 * fix the preview path to point to the correct folder ([9db1772](https://github.com/aliogaili/meronex-icons/commit/9db1772b8c03d462966c2efc68ea8ceaf860c0bc))
-* removing twitter emoji ([b9865c3](https://github.com/aliogaili/meronex-icons/commit/b9865c375fdd665f06bd4ec347ac3bebf20d7e4e))
-* undefined object error ([f5c1700](https://github.com/aliogaili/meronex-icons/commit/f5c1700ea20e016611bb770bead222fbf53bbde2))
+* remove twitter emoji ([b9865c3](https://github.com/aliogaili/meronex-icons/commit/b9865c375fdd665f06bd4ec347ac3bebf20d7e4e))
+* fix undefined object error ([f5c1700](https://github.com/aliogaili/meronex-icons/commit/f5c1700ea20e016611bb770bead222fbf53bbde2))
 
 ### [1.4.1](https://github.com/aliogaili/meronex-icons/compare/v1.4.0...v1.4.1) (2020-07-31)
 
@@ -75,4 +78,4 @@ All notable changes to this project will be documented in this file. See [standa
 * **icons:**  adjust the fill color from none to current when specified at the svg tag ([3591511](https://github.com/aliogaili/meronex-icons/commit/3591511c687ab24e6abb44a4a517fd73aaa484dc))
 * fix some styling colors ([7b93605](https://github.com/aliogaili/meronex-icons/commit/7b936057fb04e30a49b40890d5a6e0676dfa6402))
 * remove pId attribute see https://github.com/react-icons/react-icons/pull/310 ([91352d5](https://github.com/aliogaili/meronex-icons/commit/91352d59cad701bd69d3a83934c0b2019f95cd0d))
-* undefined error in the preview ([98f474d](https://github.com/aliogaili/meronex-icons/commit/98f474d2e977f5de9553cffb53a55343c00c3acf))
+*fix undefined error in the preview ([98f474d](https://github.com/aliogaili/meronex-icons/commit/98f474d2e977f5de9553cffb53a55343c00c3acf))
