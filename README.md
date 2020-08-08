@@ -50,10 +50,24 @@ Icon Library|License|Version
 [Open Iconic](https://github.com/iconic/open-iconic)|[MIT](https://opensource.org/licenses/MIT)| v1.1.1
 [System Uicons](https://github.com/CoreyGinnivan/system-uicons)|[The Unlicense](https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE)| 53a7811705be2aaa37ddbe01fd255225083eed63
 
-- Just add react component and modify the size, color, style, etc
+**Features**
+- Easily add an SVG icon as React component and modify the size, color, style, etc
 - Includes the most popular open source SVG icon sets
 - Import each icon independently preventing blowing up the bundle size
-- Fast search for all icons
+- Fast search across all the icon packs
+ 
+ **Principles**
+ - Include as many useful and popular icon packs,  we don't want to juggle between multiple libraries
+ - Maintain backward compatibility, we don't want to refactor all our icons path due to a release 
+ - Do not assume tree shaking and allow both default and named exports, this should be left as choice  
+ - Do not bloat the node_modules folder and try to keep it within an acceptable range
+ - Keep a reference to documentation site for each major release, we don't want to be forced to update because docs changed 
+ - Keep the project alive and ensure longevity, refactoring icons is neither fun nor productive
+ 
+## Roadmap 
+
+Check [here](https://github.com/meronex/meronex-icons/blob/master/Roadmap.md).  
+ 
  
 ## Installation
 
