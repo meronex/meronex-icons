@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/aliogaili/meronex-icons/compare/v2.0.3...v2.1.0) (2020-08-08)
+
+
+### Features
+
+* include all Remix icons ([f26241d](https://github.com/aliogaili/meronex-icons/commit/f26241ddc631a9884a582382787bd36c9c790d5e))
 
 ### [2.0.2](https://github.com/aliogaili/meronex-icons/compare/v2.0.1...v2.0.2) (2020-08-06)
 
