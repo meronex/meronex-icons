@@ -263,28 +263,26 @@ async function writeIconModule(icon) {
       const pascalName = camelcase(rawName, { pascalCase: true });
       const name =
         (content.formatter && content.formatter(pascalName)) || pascalName;
-      if (exists.has(name)) continue;
-      exists.add(name);
-
-      await generateIconFile(icon, name, iconData);
-
-      // write like: module/fa/index.esm.js
-      const modRes = generateIconRow(icon, name, iconData, "module");
-      await appendFile(
-        path.resolve(DIST, icon.id, "index.esm.js"),
-        modRes,
-        "utf8"
-      );
-      const comRes = generateIconRow(icon, name, iconData, "common");
-      await appendFile(path.resolve(DIST, icon.id, "index.js"), comRes, "utf8");
-      const dtsRes = generateIconRow(icon, name, iconData, "dts");
-      await appendFile(
-        path.resolve(DIST, icon.id, "index.d.ts"),
-        dtsRes,
-        "utf8"
-      );
-
-      exists.add(file);
+      if (!exists.has(name.toLowerCase())) {
+        exists.add(name.toLowerCase());
+        await generateIconFile(icon, name, iconData);
+        // write like: module/fa/index.esm.js
+        const modRes = generateIconRow(icon, name, iconData, "module");
+        await appendFile(
+            path.resolve(DIST, icon.id, "index.esm.js"),
+            modRes,
+            "utf8"
+        );
+        const comRes = generateIconRow(icon, name, iconData, "common");
+        await appendFile(path.resolve(DIST, icon.id, "index.js"), comRes, "utf8");
+        const dtsRes = generateIconRow(icon, name, iconData, "dts");
+        await appendFile(
+            path.resolve(DIST, icon.id, "index.d.ts"),
+            dtsRes,
+            "utf8"
+        );
+        exists.add(file);
+      }
     }
   }
 }
