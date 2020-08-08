@@ -7,11 +7,21 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-* case sensitive elimination of duplicate files to prevent missing modules error
+* case sensitive elimination of duplicate files to prevent missing modules error ([9c834ea](https://github.com/aliogaili/meronex-icons/commit/9c834ea4c8f1b1daa8f30cf58d370f85e8fec206))
+  
+  Some build systems will report an error similar to:
+  ```
+  ./node_modules/@meronex/icons/gi/index.esm.js
+  Cannot find file: 'GiIconName.js' does not match the corresponding name on disk: './node_modules/@meronex/icons/gi/GiIconname.js'.
+  ```
+  The cause of the error is that some  SVG icons are added twice in the original icon source folder such as icon_name.svg and iconname.svg.
+  After the name formatting, GiIconName and GIIconname will be considered duplicate and only one file will be created. This fix will
+  prevent the processing of icons with a similar name within an icon pack.
+
 
 ### Bug Fixes
 
-* case sensitive elimination of duplicate files to prevent missing modules error ([9c834ea](https://github.com/aliogaili/meronex-icons/commit/9c834ea4c8f1b1daa8f30cf58d370f85e8fec206))
+* case sensitive elimination of duplicate files to prevent missing modules error 
 
 ## [3.0.0](https://github.com/aliogaili/meronex-icons/compare/v2.0.3...v2.1.0) (2020-08-08)
 
