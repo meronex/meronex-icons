@@ -11,6 +11,7 @@
 **LTS & Release Management**
 
 - Latest preview site: https://icons.meronex.com
+- v4.x.x: https://icons-v4.meronex.com
 - v3.x.x: https://icons-v3.meronex.com
 - v2.x.x: https://icons-v2.meronex.com
 
