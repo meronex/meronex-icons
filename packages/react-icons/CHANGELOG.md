@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/aliogaili/meronex-icons/compare/v2.1.2...v4.0.0) (2020-08-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* case sensitive elimination of duplicate files to prevent missing modules error
+
+### Bug Fixes
+
+* case sensitive elimination of duplicate files to prevent missing modules error ([9c834ea](https://github.com/aliogaili/meronex-icons/commit/9c834ea4c8f1b1daa8f30cf58d370f85e8fec206))
 
 ## [3.0.0](https://github.com/aliogaili/meronex-icons/compare/v2.0.3...v2.1.0) (2020-08-08)
 
