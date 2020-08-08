@@ -11,6 +11,7 @@
 **LTS & Release Management**
 
 - Latest preview site: https://icons.meronex.com
+- v3.x.x: https://icons-v3.meronex.com
 - v2.x.x: https://icons-v2.meronex.com
 
 The aim is to keep the version specific site up as a reference even after a major release for those who want to hold
