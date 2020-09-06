@@ -29,6 +29,9 @@ A major release implies one or more icons have been changed thus requiring a new
 **vNext** 
 
 - feat(icons): add [spectrum icons](https://lachlanjc.com/spectrum-icons/)
+- feat(icons): add [RPG icons](http://nagoshiashumari.github.io/Rpg-Awesome/)
+- feat(icons): add [line-awesome](https://github.com/icons8/line-awesome)
+- feat(icons): add [fluent-icons](https://github.com/microsoft/fluentui-system-icons)
 - feat(preview): implement analyze on the copied icons, how many copied per pack, so we can get an idea of 
 which packs are we using the most and then optimize 
 - feat(preview): make the copy code string configurable depending on the icons being imported
