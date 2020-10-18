@@ -308,8 +308,9 @@ I've merged some open pull requests, added icons and fixed some performance issu
  
 #### Do you plan to keep maintaining it?
 
-I'd rather have the changes merged upstream I don't prefer fragmented react community, however I plan to keep this maintained until
-react-icons regains momentum. My view on this that if you publish open source, then you've to be responsible for the longevity of it when others depend on it 
+Yes, this used internally in profit generating busienss and will be maintained long-term.
+
+I'd rather have the changes merged upstream as I don't prefer fragmented react community, however this fork was essential due low activity in the main repo. My view on this that if you publish open source, then you've to be responsible for the longevity of it when others depend on it 
 and willing to offer a hand, otherwise don't publish at all.
 
 ## Related Projects
